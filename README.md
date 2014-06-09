@@ -1,4 +1,4 @@
-# jed (j140) - 140 bytes template engine
+# j140 - Jed's 140 bytes template engine
 
 [![Build Status](https://travis-ci.org/tunnckoCore/j140.png)](https://travis-ci.org/tunnckoCore/j140) [![Dependencies Status](https://david-dm.org/tunnckoCore/j140/status.svg)](https://david-dm.org/tunnckoCore/j140)
 
