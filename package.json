@@ -1,0 +1,34 @@
+{
+  "name": "j140",
+  "description": "Javascript template engine in 140 bytes, by Jed Schmidt. For browser and node.",
+  "version": "0.0.1",
+  "files": [
+    "index.js",
+    "benchmark.js",
+    "example.js",
+    "example.html",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node example.js",
+    "test": "node_modules/mocha/bin/mocha --require should --reporter spec test.js",
+    "bench": "node benchmark.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tunnckoCore/j140"
+  },
+  "keywords": [
+    "javascript",
+    "template",
+    "engine",
+    "140bytes",
+    "browser"
+  ],
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "license": "MIT"
+}
