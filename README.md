@@ -1,13 +1,13 @@
-# jed - 140 bytes template engine
+# jed (j140) - 140 bytes template engine
 
-[![Build Status](https://travis-ci.org/tunnckoCore/jed.png)](https://travis-ci.org/tunnckoCore/jed) [![Dependencies Status](https://david-dm.org/tunnckoCore/jed/status.svg)](https://david-dm.org/tunnckoCore/jed)
+[![Build Status](https://travis-ci.org/tunnckoCore/j140.png)](https://travis-ci.org/tunnckoCore/j140) [![Dependencies Status](https://david-dm.org/tunnckoCore/j140/status.svg)](https://david-dm.org/tunnckoCore/j140)
 
 > Javascript template engine in 140 bytes, by Jed Schmidt
 
 ## Install
 
 ```
-npm install jed
+npm install j140
 ```
 
 ## Usage
