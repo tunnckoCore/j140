@@ -1,7 +1,7 @@
 {
   "name": "j140",
   "description": "Javascript template engine in 140 bytes, by Jed Schmidt. For browser and node.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "index.js",
     "benchmark.js",
