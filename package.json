@@ -1,34 +1,31 @@
 {
   "name": "j140",
-  "description": "Javascript template engine in 140 bytes, by Jed Schmidt. For browser and node.",
   "version": "0.0.2",
-  "files": [
-    "index.js",
-    "benchmark.js",
-    "example.js",
-    "example.html",
-    "test.js",
-    "README.md"
-  ],
+  "description": "Javascript template engine in just 140 bytes, for browser and node - by Jed Schmidt",
   "scripts": {
-    "start": "node example.js",
-    "test": "node_modules/mocha/bin/mocha --require should --reporter spec test.js",
-    "bench": "node benchmark.js"
+    "lint": "jshint index.js && jscs index.js --reporter inline",
+    "test": "mocha",
+    "test-cov": "istanbul cover _mocha",
+    "test-travis": "istanbul cover _mocha --report lcovonly"
+  },
+  "author": {
+    "name": "Charlike Make Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "https://github.com/tunnckoCore"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tunnckoCore/j140"
+    "url": "git://github.com/tunnckoCore/j140.git"
   },
-  "keywords": [
-    "javascript",
-    "template",
-    "engine",
-    "140bytes",
-    "browser"
-  ],
+  "keywords": [],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/j140/blob/master/license.md"
+  },
+  "dependencies": {},
   "devDependencies": {
+    "istanbul-harmony": "^0.3.1",
     "mocha": "*",
-    "should": "*"
-  },
-  "license": "MIT"
+    "mocha-lcov-reporter": "^0.0.1"
+  }
 }
