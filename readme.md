@@ -41,7 +41,7 @@ console.log(html);
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
-Copyright (c) 2014 [Jed Schmindt](http://jed.is) [@jedschmidt](https://twitter.com/jedschmidt)
+Copyright (c) 2014 [Jed Schmindt](http://jed.is) [@jedschmidt](https://twitter.com/jedschmidt)  
 Released under the [`MIT`][license-url] and `WTFPL` license.
 
 
