@@ -1,6 +1,6 @@
 {
   "name": "j140",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript template engine in just 140 bytes, for browser and node - by Jed Schmidt",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
