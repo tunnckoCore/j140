@@ -9,6 +9,13 @@ npm install j140
 npm test
 ```
 
+## Include in html
+> After that you can use directly `j140` function.
+
+```html
+<script src="https://cdn.rawgit.com/tunnckoCore/j140/master/dist/j140.js"></script>
+```
+
 
 ## Usage
 > For more use-cases see the [tests](./test.js) or [examples](./examples)
