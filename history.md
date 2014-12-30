@@ -1,3 +1,7 @@
+## v1.0.2 / December 30, 2014
+- add `dist/` directory for browser and cdn usage. There will live and minified version.
+- add browser "installation" (with script tag, lol)
+
 ## v1.0.1 / December 30, 2014
 - add more examples for browser and for node
 - add advanced browser example to readme
