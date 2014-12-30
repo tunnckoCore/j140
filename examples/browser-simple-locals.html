@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>j140 - Jed's 140bytes template engine</title>
+</head>
+<body>
+    <h1 class="title">simple locals - sync and async (see console)</h1>
+    <script src="../index.js"></script>
+    <script>
+        /**
+         * Sync with locals
+         */
+        var html = j140("Test #{this.state || 'pass'}", {state: 'sync'});
+        console.log(html);
+        //=> "Test sync"
+
+        /**
+         * Async with locals
+         */
+        j140("Test #{this.state || 'pass'}", {state: 'async'}, function (err, data) {
+          console.log(data);
+          //=> "Test async"
+        });
+
+    </script>
+</body>
+</html>
+
+

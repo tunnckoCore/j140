@@ -11,7 +11,7 @@ npm test
 
 
 ## Usage
-> For more use-cases see the [tests](./test.js) or [example.js](./example.js)
+> For more use-cases see the [tests](./test.js) or [examples](./examples)
 
 ```js
 var j140 = require('j140');
@@ -30,6 +30,43 @@ console.log(html);
 // => "Test pass"
 ```
 
+
+## Advanced browser example
+> You can check [the demo here](./examples/browser-precompiled-templates.html) by opening the file in browser.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>j140 - Jed's 140bytes template engine</title>
+</head>
+<body>
+    <h1 class="title">With helpers, partials, precompiled templates and more</h1>
+    <section class="content"></section>
+    <script type="text/x-j140-template" id="home-template">
+        <h2>Home</h2>
+        #{paragraph(this)}
+        <p>Is beta test?! #{this.beta}</p>
+    </script>
+    <script type="text/x-j140-template" id="paragraph-template">
+        <p>You are in page: #{this.pageName}</p>
+    </script>
+    <script src="../index.js"></script>
+    <script>
+        var content = document.querySelector('.content');
+        var homePage = document.querySelector('#home-template');
+        var paragraphTemplate = document.querySelector('#paragraph-template');
+        var paragraphCompiled = j140(paragraphTemplate.textContent, null, true);
+
+        var home = j140(homePage.textContent, {paragraph: paragraphCompiled}, true);
+        var html = home({pageName: 'Home!!', beta: 'yes'}, {paragraph: function(self) {
+            return self.pageName.toUpperCase();
+        }})
+        content.innerHTML = html
+    </script>
+</body>
+</html>
+```
 
 ## Author
 **Charlike Mike Reagent**
