@@ -1,6 +1,7 @@
 ## [![npm][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url]
 
-> Javascript template engine in just 140 bytes, for browser and node - by Jed Schmidt
+> Javascript template engine in just 140 bytes, for browser and node - by Jed Schmidt.  
+This template engine uses `with`!! So, please, dont use it in production.
 
 ## Install
 ```bash
