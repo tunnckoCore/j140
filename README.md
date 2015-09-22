@@ -11,6 +11,24 @@ npm i j140 --save
 ```
 
 
+## Features
+- minimal, yet simple
+  + 446 bytes gzipped and minified
+  + 830 bytes minified
+- zero dependencies
+- works on every browser, should **even works on IE6**
+- works on the server with just `require('j140')`
+- plays well with [Browserify](https://browserify.org) and [BrowserifyCDN](https://brcdn.org)
+- support helpers and partials
+- available on CDNs - [BrowserifyCDN](https://www.brcdn.org/?module=j140&version=list) and [RawGit CDN](https://rawgit.com/)
+
+
+## Use it
+- [dist/j140.min.js](./dist/j140.min.js) (*830bytes*)
+- [dist/j140.standalone.min.js](./dist/j140.standalone.min.js) (*1.1kb*)
+- [j140 on BrowserifyCDN](https://www.brcdn.org/?module=j140&version=list)
+- [j140 on RawGit CDN](https://cdn.rawgit.com/tunnckoCore/j140/master/dist/j140.standalone.min.js)
+
 
 ## Usage
 > For more use-cases see the [tests](./test.js).  
