@@ -26,7 +26,17 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "bytes",
+    "compile",
+    "engine",
+    "helpers",
+    "minimal",
+    "partials",
+    "render",
+    "small",
+    "template"
+  ],
   "standard": {
     "ignore": [
       "dist/**"
