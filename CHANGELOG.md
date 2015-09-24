@@ -1,5 +1,11 @@
 
 
+## 2.0.1 - 2015-09-24
+- Release v2.0.1 / npm@v2.0.1
+- fix non-standalone bundles which was broken
+  + due to wrong flags in `npm-scripts`
+- update (improve) npm scripts
+
 ## 2.0.0 - 2015-09-23
 - Release v2.0.0 / npm@v2.0.0
 - bundles and CDNs
