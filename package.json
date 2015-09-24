@@ -7,19 +7,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build-bundle && npm run build-standalone",
-    "build-bundle": "npm run bundle && npm run bundle-uglify",
-    "build-standalone": "npm run standalone && npm run standalone-uglify",
-    "bundle": "browserify -do dist/j140.js index.js",
-    "bundle-uglify": "uglifyjs -m -c -o dist/j140.min.js dist/j140.js",
-    "standalone": "browserify -s j140 -do dist/j140.standalone.js index.js",
-    "standalone-uglify": "uglifyjs -m -c -o dist/j140.standalone.min.js dist/j140.standalone.js",
+    "prebuild": "npm install && npm test && mkdirp dist",
+    "build": "npm run bundle && npm run standalone",
+    "bundle": "browserify -dr ./index.js:j140 -o dist/j140.js",
+    "postbundle": "uglifyjs dist/j140.js -m -c -o dist/j140.min.js",
+    "standalone": "browserify -ds j140 index.js -o dist/j140.standalone.js",
+    "poststandalone": "uglifyjs dist/j140.standalone.js -m -c -o dist/j140.standalone.min.js",
     "test": "standard && node test.js"
   },
   "dependencies": {},
   "devDependencies": {
     "assertit": "^0.1.0",
     "browserify": "^11.1.0",
+    "mkdirp": "^0.5.1",
     "uglify-js": "^2.4.24",
     "utils": "^0.2.2"
   },
